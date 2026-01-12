@@ -1,0 +1,79 @@
+[
+    {
+        "slug": "university-place-cafeteria",
+        "title": "University Place Cafeteria",
+        "poster_url": "assets/images/university-poster.jpg",
+        "story": "The Gathering. The starting point. Like the mass meetings of the civil rights era, we begin with community orientation.",
+        "youtube_url": "",
+        "display_order": 1
+    },
+    {
+        "slug": "alumni-auditorium",
+        "title": "Alumni Auditorium",
+        "poster_url": "assets/images/alumni-auditorium-poster.jpg",
+        "story": "The Threshold. We exit the comfort of the gathering and walk to the Auditorium. This is the space of confrontation and history.",
+        "youtube_url": "",
+        "display_order": 2
+    },
+    {
+        "slug": "harris-commons",
+        "title": "Harris Commons",
+        "poster_url": "assets/images/harris-commons-poster.jpg",
+        "story": "The Processing. A necessary pause. After the weight of the Auditorium, we enter Harris Commons to breathe and process.",
+        "youtube_url": "",
+        "display_order": 3
+    },
+    {
+        "slug": "latham-hall",
+        "title": "Latham Hall",
+        "poster_url": "assets/images/latham-hall-poster.jpg",
+        "story": "The Reflection. The core interactive zone. Here, we engage with the 5 Stations of Preparation.",
+        "youtube_url": "",
+        "display_order": 4
+    },
+    {
+        "slug": "01-belief",
+        "title": "Belief",
+        "poster_url": "assets/images/station-01-belief-poster.jpg",
+        "description": "Name the conviction that holds you steady when everything else shifts.",
+        "youtube_url": "https://www.youtube.com/watch?v=YOUR_STATION_01_VIDEO_ID",
+        "display_order": 1,
+        "type": "station"
+    },
+    {
+        "slug": "02-courage",
+        "title": "Courage",
+        "poster_url": "assets/images/station-02-courage-poster.jpg",
+        "description": "Call out the moment you choose bravery over comfort.",
+        "youtube_url": "https://www.youtube.com/watch?v=YOUR_STATION_02_VIDEO_ID",
+        "display_order": 2,
+        "type": "station"
+    },
+    {
+        "slug": "03-identity",
+        "title": "Identity",
+        "poster_url": "assets/images/station-03-identity-poster.jpg",
+        "description": "Who are you when nobody is watching and nobody is clapping.",
+        "youtube_url": "https://www.youtube.com/watch?v=YOUR_STATION_03_VIDEO_ID",
+        "display_order": 3,
+        "type": "station"
+    },
+    {
+        "slug": "04-listening",
+        "title": "Listening",
+        "poster_url": "assets/images/station-04-listening-poster.jpg",
+        "description": "Justice starts when we listen long enough to be changed.",
+        "youtube_url": "https://www.youtube.com/watch?v=YOUR_STATION_04_VIDEO_ID",
+        "display_order": 4,
+        "type": "station"
+    },
+    {
+        "slug": "05-preparation",
+        "title": "Preparation",
+        "poster_url": "assets/images/station-05-preparation-poster.jpg",
+        "description": "Freedom is built. What are you training for right now.",
+        "youtube_url": "https://www.youtube.com/watch?v=YOUR_STATION_05_VIDEO_ID",
+        "display_order": 5,
+        "type": "station"
+    }
+]

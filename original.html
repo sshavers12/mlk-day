@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<!-- CANONICAL DESIGN REFERENCE – DO NOT DELETE -->
+<!-- This file serves as the permanence copy and design source of truth for the project. -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reclaiming the Dream | CAAT MLK Day 2026</title>
+    <meta name="description"
+        content="A civic curriculum and living archive exploring Dr. Martin Luther King Jr.'s preparation and legacy in Chester, PA." />
+
+    <style>
+        :root {
+            --caat-gold: #FFD400;
+            --caat-black: #000000;
+            --caat-panel: #1A1A1A;
+            --caat-white: #FFFFFF;
+            --caat-gray: #B0B0B0;
+            --font-main: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            --spacing-unit: 1.5rem;
+            --nav-height: 70px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+
+        body {
+            background: var(--caat-black);
+            color: var(--caat-white);
+            font-family: var(--font-main);
+            line-height: 1.6;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img,
+        video {
+            max-width: 100%;
+            display: block;
+            object-fit: cover
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+            color: var(--caat-white)
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            color: var(--caat-white);
+            border-left: 4px solid var(--caat-gold);
+            padding-left: 1rem;
+            margin-top: 2rem
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            color: var(--caat-gold);
+            margin-top: 1.5rem
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--caat-gray);
+            max-width: 70ch
+        }
+
+        strong {
+            color: var(--caat-white)
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: .05em;
+            color: var(--caat-gold);
+            display: block;
+            margin-bottom: .5rem
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit)
+        }
+
+        .container-wide {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit)
+        }
+
+        section {
+            padding: 4rem 0;
+            border-bottom: 1px solid #333;
+            scroll-margin-top: var(--nav-height)
+        }
+
+        /* NAV */
+        .caat-sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: var(--caat-black);
+            border-bottom: 2px solid var(--caat-gold);
+            height: var(--nav-height);
+            display: flex;
+            align-items: center;
+        }
+
+        .caat-nav-inner {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .caat-logo {
+            font-weight: 900;
+            color: var(--caat-gold);
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .caat-nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem
+        }
+
+        .caat-nav-links a {
+            color: var(--caat-white);
+            text-decoration: none;
+            font-size: .85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: color .2s;
+        }
+
+        .caat-nav-links a:hover {
+            color: var(--caat-gold)
+        }
+
+        /* CARDS */
+        .card {
+            background: var(--caat-panel);
+            padding: 1.5rem;
+            border-radius: 4px;
+            margin-bottom: 1.5rem;
+            border: 1px solid #333;
+        }
+
+        ul.flow-list {
+            list-style: none;
+            padding-left: 0
+        }
+
+        ul.flow-list li {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 1rem;
+            color: var(--caat-gray)
+        }
+
+        ul.flow-list li::before {
+            content: '•';
+            color: var(--caat-gold);
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0;
+            top: -5px
+        }
+
+        /* CAMPUS TOUR */
+        #campus-tour {
+            padding-top: 2rem;
+            background: #0a0a0a
+        }
+
+        .tour-subnav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            padding: 1rem 0 3rem 0;
+            border-bottom: 1px solid #333;
+            margin-bottom: 3rem;
+        }
+
+        .tour-subnav a {
+            color: var(--caat-gray);
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: .8rem;
+            letter-spacing: 1px;
+            transition: .2s;
+        }
+
+        .tour-subnav a:hover {
+            color: var(--caat-gold)
+        }
+
+        /* LOCATION POSTER MODULE (ONE IMAGE ONLY) */
+        .loc-module {
+            margin-bottom: 6rem;
+            scroll-margin-top: calc(var(--nav-height) + 20px)
+        }
+
+        .loc-hero {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 21/9;
+            margin-bottom: 1.5rem;
+            border-bottom: 4px solid var(--caat-gold);
+            background: #222;
+            overflow: hidden;
+        }
+
+        .loc-hero img {
+            width: 100%;
+            height: 100%
+        }
+
+        .loc-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, .86);
+            padding: 1rem 2rem;
+            color: var(--caat-white);
+            max-width: 720px;
+        }
+
+        .loc-sub {
+            color: var(--caat-gold);
+            font-size: .9rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: .25rem;
+            display: block;
+        }
+
+        .loc-caption h3 {
+            margin: 0;
+            color: var(--caat-white);
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        .poster-note {
+            margin-top: 1rem;
+            border-left: 2px solid #333;
+            padding-left: 1rem;
+            color: var(--caat-gray);
+        }
+
+        .scan-hint {
+            font-family: monospace;
+            font-size: .75rem;
+            color: var(--caat-gold);
+            border: 1px dashed var(--caat-gold);
+            padding: .5rem;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+
+        /* LATHAM STATIONS: POSTER + YOUTUBE LINKS */
+        .station-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.25rem;
+            margin-top: 2rem;
+        }
+
+        .station-card {
+            background: var(--caat-panel);
+            border: 1px solid #333;
+            border-radius: 6px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            min-height: 100%;
+        }
+
+        .station-poster {
+            width: 100%;
+            aspect-ratio: 16/9;
+            background: #111;
+            position: relative;
+        }
+
+        .station-poster img {
+            width: 100%;
+            height: 100%;
+            opacity: .92;
+        }
+
+        .station-badge {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: rgba(0, 0, 0, .75);
+            border: 1px solid var(--caat-gold);
+            color: var(--caat-gold);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: .8rem;
+        }
+
+        .station-body {
+            padding: 1rem 1rem 1.25rem 1rem
+        }
+
+        .station-title {
+            margin: 0 0 .5rem 0;
+            color: var(--caat-white);
+            font-size: 1.05rem;
+            text-transform: uppercase;
+            letter-spacing: .5px;
+        }
+
+        .station-desc {
+            margin: 0 0 .9rem 0;
+            color: var(--caat-gray);
+            max-width: none
+        }
+
+        .station-actions {
+            margin-top: auto;
+            padding: 0 1rem 1rem 1rem
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            background: var(--caat-gold);
+            color: var(--caat-black);
+            text-decoration: none;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: .7px;
+            font-size: .75rem;
+            padding: .75rem 1rem;
+            border-radius: 999px;
+            border: none;
+            width: fit-content;
+        }
+
+        .btn:focus,
+        .btn:hover {
+            opacity: .9
+        }
+
+        /* ASSISTANT WIDGET */
+        #assistant-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--caat-gold);
+            color: var(--caat-black);
+            border: none;
+            border-radius: 50px;
+            padding: 12px 24px;
+            font-weight: 800;
+            cursor: pointer;
+            z-index: 9999;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, .5);
+            transition: transform .2s;
+        }
+
+        #assistant-btn:hover {
+            transform: scale(1.05)
+        }
+
+        #assistant-panel {
+            display: none;
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            width: 360px;
+            height: 600px;
+            max-height: 80vh;
+            background: var(--caat-black);
+            border: 2px solid var(--caat-gold);
+            border-radius: 8px;
+            z-index: 9999;
+            flex-direction: column;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, .8);
+            overflow: hidden;
+        }
+
+        #panel-header {
+            background: var(--caat-gold);
+            color: var(--caat-black);
+            padding: 10px 16px;
+            font-weight: 800;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #panel-close {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            line-height: 1;
+            color: var(--caat-black)
+        }
+
+        #panel-iframe {
+            flex-grow: 1;
+            border: none;
+            background: #fff;
+            width: 100%
+        }
+
+        @media (max-width: 768px) {
+            .caat-nav-links {
+                display: none
+            }
+
+            h1 {
+                font-size: 1.8rem
+            }
+
+            .station-grid {
+                grid-template-columns: 1fr
+            }
+
+            .loc-caption {
+                max-width: 100%
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="caat-sticky-nav">
+        <div class="caat-nav-inner">
+            <a href="#" class="caat-logo">CAAT MLK 2026</a>
+            <ul class="caat-nav-links">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#journey-map">Experience Flow</a></li>
+                <li><a href="#campus-tour">Campus Locations</a></li>
+                <li><a href="#latham-hall">Latham Stations</a></li>
+                <li><a href="#community-voice">Community Voice</a></li>
+                <li><a href="#ai-companion" onclick="toggleAssistant(); return false;">Exhibit Guide</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="container" style="padding-top:4rem;">
+        <span class="subtitle">Chester Cultural Arts & Technology Center</span>
+        <h1>Reclaiming the <span style="color:var(--caat-gold);">Dream</span></h1>
+        <p style="margin-top:1rem;border-left:2px solid #333;padding-left:1rem;">
+            Dr. Martin Luther King Jr. • Chester, Pennsylvania<br />
+            A living civic curriculum and digital archive.
+        </p>
+    </header>
+
+    <div class="container">
+        <section id="overview">
+            <p><strong>This is not an event. It is a curriculum.</strong></p>
+            <p>Welcome to the digital companion for the 2026 MLK Day Civic Experience. This archive captures the local
+                history that shaped a global leader, and invites you to participate in that continuing legacy.</p>
+            <p>Dr. King’s time in Chester was defined by preparation, academic rigor, and the crystallization of his
+                philosophy of nonviolence. Today, we retrace those steps—physically and reflectively.</p>
+        </section>
+
+        <section id="journey-map">
+            <h2>Experience Flow</h2>
+            <p>The experience is a progression across four distinct locations on campus, each representing a stage of
+                civic engagement.</p>
+
+            <div class="card">
+                <h3>1. University Place Cafeteria</h3>
+                <p><strong>The Gathering.</strong> The starting point. Like the mass meetings of the civil rights era,
+                    we begin with community orientation.</p>
+            </div>
+
+            <div class="card">
+                <h3>2. Alumni Auditorium</h3>
+                <p><strong>The Threshold.</strong> We exit the comfort of the gathering and walk to the Auditorium. This
+                    is the space of confrontation and history.</p>
+            </div>
+
+            <div class="card">
+                <h3>3. Harris Commons</h3>
+                <p><strong>The Processing.</strong> A necessary pause. After the weight of the Auditorium, we enter
+                    Harris Commons to breathe and process.</p>
+            </div>
+
+            <div class="card">
+                <h3>4. Latham Hall</h3>
+                <p><strong>The Reflection.</strong> The core interactive zone. Here, we engage with the 5 Stations of
+                    Preparation.</p>
+            </div>
+        </section>
+    </div>
+
+    <section id="campus-tour">
+        <div class="container-wide">
+            <div style="text-align:center;margin-bottom:2rem;">
+                <h2 style="border:none;padding:0;color:var(--caat-gold);">Campus Locations</h2>
+                <p style="margin:0 auto;max-width:80ch;">
+                    Each location is represented by a single poster image that tells the story of what happens in that
+                    building.
+                </p>
+            </div>
+
+            <div class="tour-subnav">
+                <a href="#university-place-cafeteria">Cafeteria</a>
+                <a href="#alumni-auditorium">Alumni Auditorium</a>
+                <a href="#harris-commons">Harris Commons</a>
+                <a href="#latham-hall-tour">Latham Hall</a>
+            </div>
+
+            <!-- LOCATION 01 -->
+            <article id="university-place-cafeteria" class="loc-module">
+                <div class="loc-hero">
+                    <img src="assets/images/university-poster.jpg" alt="University Place Cafeteria Poster"
+                        loading="lazy" />
+                    <div class="loc-caption">
+                        <span class="loc-sub">Location 01 • The Gathering</span>
+                        <h3>University Place Cafeteria</h3>
+                    </div>
+                </div>
+                <div class="container">
+                    <p class="poster-note">
+                        This poster represents orientation, community, and the first step into the experience. Use it as
+                        the visual anchor for the Cafeteria station.
+                    </p>
+                    <span class="scan-hint">SCAN QR AT THIS LOCATION FOR AUDIO</span>
+                </div>
+            </article>
+
+            <!-- LOCATION 02 -->
+            <article id="alumni-auditorium" class="loc-module">
+                <div class="loc-hero">
+                    <img src="assets/images/alumni-auditorium-poster.jpg" alt="Alumni Auditorium Poster"
+                        loading="lazy" />
+                    <div class="loc-caption">
+                        <span class="loc-sub">Location 02 • The Threshold</span>
+                        <h3>Alumni Auditorium</h3>
+                    </div>
+                </div>
+                <div class="container">
+                    <p class="poster-note">
+                        This poster represents confrontation, memory, and the emotional weight of the moment inside the
+                        Auditorium experience.
+                    </p>
+                    <span class="scan-hint">SCAN QR AT THIS LOCATION FOR AUDIO</span>
+                </div>
+            </article>
+
+            <!-- LOCATION 03 -->
+            <article id="harris-commons" class="loc-module">
+                <div class="loc-hero">
+                    <img src="assets/images/harris-commons-poster.jpg" alt="Harris Commons Poster" loading="lazy" />
+                    <div class="loc-caption">
+                        <span class="loc-sub">Location 03 • The Processing</span>
+                        <h3>Harris Commons</h3>
+                    </div>
+                </div>
+                <div class="container">
+                    <p class="poster-note">
+                        This poster represents the pause after impact. Harris Commons is where people breathe, talk, and
+                        begin turning emotion into understanding.
+                    </p>
+                    <span class="scan-hint">SCAN QR AT THIS LOCATION FOR AUDIO</span>
+                </div>
+            </article>
+
+            <!-- LOCATION 04 -->
+            <article id="latham-hall-tour" class="loc-module">
+                <div class="loc-hero">
+                    <img src="assets/images/latham-hall-poster.jpg" alt="Latham Hall Poster" loading="lazy" />
+                    <div class="loc-caption">
+                        <span class="loc-sub">Location 04 • The Reflection</span>
+                        <h3>Latham Hall</h3>
+                    </div>
+                </div>
+                <div class="container">
+                    <p class="poster-note">
+                        This poster represents the core interactive zone. Latham Hall is where reflection becomes
+                        record, and community voice becomes archive.
+                    </p>
+                    <span class="scan-hint">PROCEED TO THE 5 STATIONS BELOW</span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <div class="container">
+        <section id="latham-hall">
+            <h2>Latham Hall: The 5 Stations</h2>
+            <p>
+                Each station below has a poster image and a YouTube link that explains the moment. Keep the descriptions
+                brief and let the visuals do the heavy lifting.
+            </p>
+
+            <div class="station-grid">
+                <!-- STATION 1 -->
+                <div class="station-card" id="station-belief">
+                    <div class="station-poster">
+                        <img src="assets/images/station-01-belief-poster.jpg" alt="Station 1 Belief Poster"
+                            loading="lazy" />
+                        <span class="station-badge">01</span>
+                    </div>
+                    <div class="station-body">
+                        <h4 class="station-title">Belief</h4>
+                        <p class="station-desc">Name the conviction that holds you steady when everything else shifts.
+                        </p>
+                    </div>
+                    <div class="station-actions">
+                        <a class="btn" href="https://www.youtube.com/watch?v=YOUR_STATION_01_VIDEO_ID" target="_blank"
+                            rel="noopener">
+                            Watch Station Video
+                        </a>
+                    </div>
+                </div>
+
+                <!-- STATION 2 -->
+                <div class="station-card" id="station-courage">
+                    <div class="station-poster">
+                        <img src="assets/images/station-02-courage-poster.jpg" alt="Station 2 Courage Poster"
+                            loading="lazy" />
+                        <span class="station-badge">02</span>
+                    </div>
+                    <div class="station-body">
+                        <h4 class="station-title">Courage</h4>
+                        <p class="station-desc">Call out the moment you choose bravery over comfort.</p>
+                    </div>
+                    <div class="station-actions">
+                        <a class="btn" href="https://www.youtube.com/watch?v=YOUR_STATION_02_VIDEO_ID" target="_blank"
+                            rel="noopener">
+                            Watch Station Video
+                        </a>
+                    </div>
+                </div>
+
+                <!-- STATION 3 -->
+                <div class="station-card" id="station-identity">
+                    <div class="station-poster">
+                        <img src="assets/images/station-03-identity-poster.jpg" alt="Station 3 Identity Poster"
+                            loading="lazy" />
+                        <span class="station-badge">03</span>
+                    </div>
+                    <div class="station-body">
+                        <h4 class="station-title">Identity</h4>
+                        <p class="station-desc">Who are you when nobody is watching and nobody is clapping.</p>
+                    </div>
+                    <div class="station-actions">
+                        <a class="btn" href="https://www.youtube.com/watch?v=YOUR_STATION_03_VIDEO_ID" target="_blank"
+                            rel="noopener">
+                            Watch Station Video
+                        </a>
+                    </div>
+                </div>
+
+                <!-- STATION 4 -->
+                <div class="station-card" id="station-listening">
+                    <div class="station-poster">
+                        <img src="assets/images/station-04-listening-poster.jpg" alt="Station 4 Listening Poster"
+                            loading="lazy" />
+                        <span class="station-badge">04</span>
+                    </div>
+                    <div class="station-body">
+                        <h4 class="station-title">Listening</h4>
+                        <p class="station-desc">Justice starts when we listen long enough to be changed.</p>
+                    </div>
+                    <div class="station-actions">
+                        <a class="btn" href="https://www.youtube.com/watch?v=YOUR_STATION_04_VIDEO_ID" target="_blank"
+                            rel="noopener">
+                            Watch Station Video
+                        </a>
+                    </div>
+                </div>
+
+                <!-- STATION 5 -->
+                <div class="station-card" id="station-preparation">
+                    <div class="station-poster">
+                        <img src="assets/images/station-05-preparation-poster.jpg" alt="Station 5 Preparation Poster"
+                            loading="lazy" />
+                        <span class="station-badge">05</span>
+                    </div>
+                    <div class="station-body">
+                        <h4 class="station-title">Preparation</h4>
+                        <p class="station-desc">Freedom is built. What are you training for right now.</p>
+                    </div>
+                    <div class="station-actions">
+                        <a class="btn" href="https://www.youtube.com/watch?v=YOUR_STATION_05_VIDEO_ID" target="_blank"
+                            rel="noopener">
+                            Watch Station Video
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="margin-top:2rem;">
+                <p style="margin:0;">
+                    Tip for setup: each station poster should match the physical station sign so people instantly
+                    recognize where they are.
+                </p>
+            </div>
+        </section>
+
+        <section id="community-voice">
+            <h2>Community Voice</h2>
+            <p>This experience is a living curriculum. The reflections collected today are not just stored; they are
+                active.</p>
+            <div class="card">
+                <ul class="flow-list" style="margin-bottom:0;">
+                    <li><strong>Anonymity:</strong> No names are attached to public displays of reflection.</li>
+                    <li><strong>Creative Output:</strong> Responses are synthesized to create music and art.</li>
+                    <li><strong>Archive:</strong> This data forms a permanent record of our community.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="ai-companion">
+            <h2>Exhibit Companion</h2>
+            <p>Throughout the exhibit, you may access the digital assistant to ask questions about Dr. King’s time at
+                Crozer Theological Seminary. Tap the gold button in the bottom right corner to begin.</p>
+        </section>
+
+        <footer>
+            <div style="border-top:1px solid #333;padding-top:2rem;color:#666;font-size:.8rem;text-align:center;">
+                <p><strong>Reclaiming the Dream • MLK 2026</strong></p>
+                <p>Produced by the Chester Cultural Arts & Technology Center (CAAT).</p>
+                <p>All historical content curated with respect for Dr. King's legacy.</p>
+            </div>
+        </footer>
+    </div>
+
+    <button id="assistant-btn" onclick="toggleAssistant()">Exhibit Guide</button>
+    <div id="assistant-panel">
+        <div id="panel-header">
+            <span>MLK Archive Assistant</span>
+            <button id="panel-close" onclick="toggleAssistant()">&times;</button>
+        </div>
+        <iframe id="panel-iframe" data-src="https://app-693118592482.us-west1.run.app"
+            title="Exhibit Assistant"></iframe>
+    </div>
+
+    <script>
+        function toggleAssistant() {
+            var panel = document.getElementById('assistant-panel');
+            var iframe = document.getElementById('panel-iframe');
+            if (panel.style.display === 'flex') {
+                panel.style.display = 'none';
+            } else {
+                panel.style.display = 'flex';
+                if (!iframe.src) iframe.src = iframe.getAttribute('data-src');
+            }
+        }
+    </script>
+</body>
+
+</html>
