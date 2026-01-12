@@ -25,6 +25,7 @@ export default function PublicLayout() {
                         <li><a href="/#journey-map">Experience Flow</a></li>
                         {/* <li><Link to="/locations" style={isActive('/locations') ? { color: 'var(--caat-yellow)' } : {}}>Campus Locations</Link></li> */}
                         <li><Link to="/latham-stations" style={isActive('/latham-stations') ? { color: 'var(--caat-yellow)' } : {}}>Latham Stations</Link></li>
+                        <li><Link to="/forms" style={isActive('/forms') ? { color: 'var(--caat-yellow)' } : {}}>Forms</Link></li>
                         <li><a href="/#community-voice">Community Voice</a></li>
                         <li className="desktop-only"><a href="#" onClick={(e) => { e.preventDefault(); toggleAssistant(); }}>Exhibit Guide</a></li>
                         {/* <li><Link to="/login" style={{ border: '1px solid #333', padding: '0.2rem 0.8rem', borderRadius: '4px' }}>Login</Link></li> */}
@@ -47,6 +48,7 @@ export default function PublicLayout() {
                     <a href="/#journey-map" onClick={() => setShowMobileMenu(false)}>Experience Flow</a>
                     {/* <Link to="/locations" onClick={() => setShowMobileMenu(false)} style={isActive('/locations') ? { color: 'var(--caat-yellow)' } : {}}>Campus Locations</Link>  */}
                     <Link to="/latham-stations" onClick={() => setShowMobileMenu(false)} style={isActive('/latham-stations') ? { color: 'var(--caat-yellow)' } : {}}>Latham Stations</Link>
+                    <Link to="/forms" onClick={() => setShowMobileMenu(false)} style={isActive('/forms') ? { color: 'var(--caat-yellow)' } : {}}>Forms</Link>
                     <a href="/#community-voice" onClick={() => setShowMobileMenu(false)}>Community Voice</a>
                     <a href="#" onClick={(e) => { e.preventDefault(); toggleAssistant(); setShowMobileMenu(false); }}>Exhibit Guide</a>
                     {/* <Link to="/login" onClick={() => setShowMobileMenu(false)} className="mobile-login-btn">Login</Link> */}
@@ -57,6 +59,10 @@ export default function PublicLayout() {
             <Outlet />
 
             <div className="container" style={{ marginTop: 'auto' }}>
+                <div style={{ textAlign: 'center', padding: '2rem 0', borderTop: '1px solid #333' }}>
+                    <p style={{ color: '#ccc', marginBottom: '1rem' }}>Ready to reflect? Open the forms.</p>
+                    <Link to="/forms" className="btn">Go to Forms</Link>
+                </div>
                 <footer>
                     <div style={{ borderTop: '1px solid #333', paddingTop: '2rem', color: '#666', fontSize: '.8rem', textAlign: 'center', paddingBottom: '2rem' }}>
                         <p><strong>Reclaiming the Dream • MLK 2026</strong></p>

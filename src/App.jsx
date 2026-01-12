@@ -8,6 +8,7 @@ import LocationDetail from './public/LocationDetail';
 import Stations from './public/Stations';
 import LathamStations from './public/LathamStations';
 import StationDetail from './public/StationDetail';
+import Forms from './public/Forms';
 import Watch from './public/Watch';
 import Login from './dashboard/Login';
 import SignUp from './dashboard/SignUp';
@@ -24,6 +25,7 @@ function App() {
         <Route path="loc/:slug" element={<LocationDetail />} />
         {/* <Route path="stations" element={<Stations />} /> Legacy */}
         <Route path="latham-stations" element={<LathamStations />} />
+        <Route path="forms" element={<Forms />} />
         {/* <Route path="station/:slug" element={<StationDetail />} /> Legacy */}
         <Route path="watch" element={<Watch />} />
       </Route>
