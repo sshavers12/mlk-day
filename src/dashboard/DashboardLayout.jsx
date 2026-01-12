@@ -27,7 +27,7 @@ export default function DashboardLayout() {
             data: { subscription },
         } = supabase.auth.onAuthStateChange((_event, session) => {
             setSession(session);
-            if (!session && !localStorage.getItem('mlk_mock_session')) navigate('/dashboard');
+            if (!session && !localStorage.getItem('mlk_mock_session')) navigate('/login');
         });
 
         return () => subscription.unsubscribe();
@@ -37,9 +37,10 @@ export default function DashboardLayout() {
         if (localStorage.getItem('mlk_mock_session')) {
             localStorage.removeItem('mlk_mock_session');
             setSession(null);
-            navigate('/dashboard');
+            navigate('/login');
         } else {
             await supabase.auth.signOut();
+            navigate('/login');
         }
     };
 

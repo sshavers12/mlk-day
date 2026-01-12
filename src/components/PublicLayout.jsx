@@ -24,6 +24,7 @@ export default function PublicLayout() {
                         <li><Link to="/stations" style={isActive('/stations') ? { color: 'var(--caat-gold)' } : {}}>Latham Stations</Link></li>
                         <li><a href="/#community-voice">Community Voice</a></li>
                         <li><a href="#" onClick={(e) => { e.preventDefault(); toggleAssistant(); }}>Exhibit Guide</a></li>
+                        <li><Link to="/login" style={{ border: '1px solid #333', padding: '0.2rem 0.8rem', borderRadius: '4px' }}>Login</Link></li>
                     </ul>
                 </div>
             </nav>

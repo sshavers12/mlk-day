@@ -9,6 +9,7 @@ import Stations from './public/Stations';
 import StationDetail from './public/StationDetail';
 import Watch from './public/Watch';
 import Login from './dashboard/Login';
+import SignUp from './dashboard/SignUp';
 import DashboardLayout from './dashboard/DashboardLayout';
 import AdminDashboard from './dashboard/AdminDashboard';
 import VolunteerDashboard from './dashboard/VolunteerDashboard';
@@ -25,11 +26,13 @@ function App() {
         <Route path="watch" element={<Watch />} />
       </Route>
 
-      <Route path="/dashboard" element={<Login />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<SignUp />} />
+
       <Route path="/dashboard" element={<DashboardLayout />}>
+        <Route index element={<AdminDashboard />} /> {/* Default to Admin for now, or maybe a Gateway page? */}
         <Route path="admin" element={<AdminDashboard />} />
         <Route path="volunteer" element={<VolunteerDashboard />} />
-        {/* Add specific admin subroutes later */}
       </Route>
     </Routes>
   );
