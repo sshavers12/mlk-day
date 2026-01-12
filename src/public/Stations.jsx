@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { ArrowRight } from 'lucide-react';
 import { getCreateStations } from '../services/data';
 
 export default function Stations() {
@@ -23,14 +24,15 @@ export default function Stations() {
                             <Link to={`/station/${station.slug}`} style={{ textDecoration: 'none', color: 'inherit', display: 'flex', flexDirection: 'column', height: '100%' }}>
                                 <div className="station-poster">
                                     <img src={`/${station.poster_url}`} alt={`${station.title} Poster`} loading="lazy" />
-                                    <span className="station-badge">0{station.display_order}</span>
                                 </div>
                                 <div className="station-body">
                                     <h4 className="station-title">{station.title}</h4>
                                     <p className="station-desc">{station.description}</p>
                                 </div>
                                 <div className="station-actions" style={{ marginTop: 'auto', padding: '0 1rem 1.25rem 1rem' }}>
-                                    <span className="btn">Enter Station</span>
+                                    <span className="btn">
+                                        Enter Station <ArrowRight size={16} />
+                                    </span>
                                 </div>
                             </Link>
                         </div>
