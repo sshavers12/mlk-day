@@ -39,7 +39,7 @@ export default function StationDetail() {
                 <span className="subtitle">Overview</span>
                 <h1>{station.title}</h1>
                 <p style={{ fontSize: '1.2rem', color: 'var(--caat-white)' }}>{station.story}</p>
-                <p style={{ marginTop: '1rem', fontStyle: 'italic', color: 'var(--caat-gold)' }}>
+                <p style={{ marginTop: '1rem', fontStyle: 'italic', color: 'var(--caat-yellow)' }}>
                     "{station.description}"
                 </p>
                 {station.qr_instruction && (
@@ -54,7 +54,7 @@ export default function StationDetail() {
                             Watch Video Lesson
                         </a>
                     )}
-                    <Link to="/stations" className="btn" style={{ background: 'transparent', border: '1px solid var(--caat-gold)', color: 'var(--caat-gold)' }}>
+                    <Link to="/stations" className="btn" style={{ background: 'transparent', border: '1px solid var(--caat-yellow)', color: 'var(--caat-yellow)' }}>
                         All Stations
                     </Link>
                 </div>

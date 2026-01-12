@@ -41,7 +41,7 @@ export default function Login() {
             <div className="card" style={{ width: '100%', maxWidth: '400px' }}>
                 <form onSubmit={handleLogin} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                     <div>
-                        <label style={{ display: 'block', marginBottom: '.5rem', color: 'var(--caat-gold)' }}>Email</label>
+                        <label style={{ display: 'block', marginBottom: '.5rem', color: 'var(--caat-yellow)' }}>Email</label>
                         <input
                             type="email"
                             value={email}
@@ -51,7 +51,7 @@ export default function Login() {
                         />
                     </div>
                     <div>
-                        <label style={{ display: 'block', marginBottom: '.5rem', color: 'var(--caat-gold)' }}>Password</label>
+                        <label style={{ display: 'block', marginBottom: '.5rem', color: 'var(--caat-yellow)' }}>Password</label>
                         <input
                             type="password"
                             value={password}
@@ -65,7 +65,7 @@ export default function Login() {
                         {loading ? 'Logging In...' : 'Sign In'}
                     </button>
                     <div style={{ textAlign: 'center', marginTop: '1rem', fontSize: '0.9rem' }}>
-                        Need an account? <Link to="/signup" style={{ color: 'var(--caat-gold)' }}>Sign Up</Link>
+                        Need an account? <Link to="/signup" style={{ color: 'var(--caat-yellow)' }}>Sign Up</Link>
                     </div>
                 </form>
             </div>

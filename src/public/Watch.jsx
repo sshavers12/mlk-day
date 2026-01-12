@@ -19,7 +19,7 @@ export default function Watch() {
                         <div key={s.slug} className="card">
                             <h3>{s.title}</h3>
                             {s.youtube_url ? (
-                                <a href={s.youtube_url} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--caat-gold)' }}>Watch Video &rarr;</a>
+                                <a href={s.youtube_url} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--caat-yellow)' }}>Watch Video &rarr;</a>
                             ) : (
                                 <span style={{ color: 'var(--caat-gray)' }}>Coming Soon</span>
                             )}

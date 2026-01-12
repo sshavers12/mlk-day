@@ -61,7 +61,7 @@ export default function CommunitySubmission({ stationId, stationTitle }) {
     }
 
     return (
-        <div className="card" style={{ marginTop: '2rem', borderTop: '4px solid var(--caat-gold)' }}>
+        <div className="card" style={{ marginTop: '2rem', borderTop: '4px solid var(--caat-yellow)' }}>
             <h3>Community Voice</h3>
             <p>Share your reflection or a related video for <strong>{stationTitle}</strong>.</p>
 

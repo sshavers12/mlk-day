@@ -1,6 +1,6 @@
 :root {
-  --caat-gold: #FFFFFF;
-  /* Was Gold, now White for high contrast */
+  --caat-yellow: #FFD400;
+  /* CAAT Yellow (Brand Primary) */
   --caat-black: #000000;
   --caat-panel: #111111;
   /* Darker panel */
@@ -75,7 +75,7 @@ h2 {
 
 h3 {
   font-size: 1.25rem;
-  color: var(--caat-gold);
+  color: var(--caat-yellow);
   margin-top: 1.5rem;
 }
 
@@ -93,7 +93,7 @@ strong {
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: .05em;
-  color: var(--caat-gold);
+  color: var(--caat-yellow);
   display: block;
   margin-bottom: .5rem;
 }
@@ -124,7 +124,7 @@ section {
   top: 0;
   z-index: 1000;
   background: var(--caat-black);
-  border-bottom: 2px solid var(--caat-gold);
+  border-bottom: 2px solid var(--caat-yellow);
   height: var(--nav-height);
   display: flex;
   align-items: center;
@@ -142,7 +142,7 @@ section {
 
 .caat-logo {
   font-weight: 900;
-  color: var(--caat-gold);
+  color: var(--caat-yellow);
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -164,7 +164,7 @@ section {
 }
 
 .caat-nav-links a:hover {
-  color: var(--caat-gold);
+  color: var(--caat-yellow);
 }
 
 /* CARDS */
@@ -191,7 +191,7 @@ ul.flow-list li {
 
 ul.flow-list li::before {
   content: '•';
-  color: var(--caat-gold);
+  color: var(--caat-yellow);
   font-size: 1.5rem;
   position: absolute;
   left: 0;
@@ -225,7 +225,7 @@ ul.flow-list li::before {
 
 .tour-subnav a:hover,
 .tour-subnav a.active {
-  color: var(--caat-gold);
+  color: var(--caat-yellow);
 }
 
 /* LOCATION POSTER MODULE */
@@ -239,7 +239,7 @@ ul.flow-list li::before {
   width: 100%;
   aspect-ratio: 21/9;
   margin-bottom: 1.5rem;
-  border-bottom: 4px solid var(--caat-gold);
+  border-bottom: 4px solid var(--caat-yellow);
   background: #222;
   overflow: hidden;
 }
@@ -260,7 +260,7 @@ ul.flow-list li::before {
 }
 
 .loc-sub {
-  color: var(--caat-gold);
+  color: var(--caat-yellow);
   font-size: .9rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -286,8 +286,8 @@ ul.flow-list li::before {
 .scan-hint {
   font-family: monospace;
   font-size: .75rem;
-  color: var(--caat-gold);
-  border: 1px dashed var(--caat-gold);
+  color: var(--caat-yellow);
+  border: 1px dashed var(--caat-yellow);
   padding: .5rem;
   display: inline-block;
   margin-top: 1rem;
@@ -329,8 +329,8 @@ ul.flow-list li::before {
   top: 12px;
   left: 12px;
   background: rgba(0, 0, 0, .75);
-  border: 1px solid var(--caat-gold);
-  color: var(--caat-gold);
+  border: 1px solid var(--caat-yellow);
+  color: var(--caat-yellow);
   padding: 4px 8px;
   border-radius: 4px;
   font-family: monospace;
@@ -364,7 +364,7 @@ ul.flow-list li::before {
   display: inline-flex;
   align-items: center;
   gap: .5rem;
-  background: var(--caat-gold);
+  background: var(--caat-yellow);
   color: var(--caat-black);
   text-decoration: none;
   font-weight: 800;
@@ -388,7 +388,7 @@ ul.flow-list li::before {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: var(--caat-gold);
+  background: var(--caat-yellow);
   color: var(--caat-black);
   border: none;
   border-radius: 50px;
@@ -414,7 +414,7 @@ ul.flow-list li::before {
   height: 600px;
   max-height: 80vh;
   background: var(--caat-black);
-  border: 2px solid var(--caat-gold);
+  border: 2px solid var(--caat-yellow);
   border-radius: 8px;
   z-index: 9999;
   flex-direction: column;
@@ -423,7 +423,7 @@ ul.flow-list li::before {
 }
 
 #panel-header {
-  background: var(--caat-gold);
+  background: var(--caat-yellow);
   color: var(--caat-black);
   padding: 10px 16px;
   font-weight: 800;
@@ -482,7 +482,7 @@ ul.flow-list li::before {
   .mobile-menu-btn .bar {
     width: 100%;
     height: 3px;
-    background-color: var(--caat-gold);
+    background-color: var(--caat-yellow);
     border-radius: 2px;
     transition: all 0.3s linear;
   }
@@ -515,7 +515,7 @@ ul.flow-list li::before {
     background: transparent;
     border: none;
     font-size: 3rem;
-    color: var(--caat-gold);
+    color: var(--caat-yellow);
     cursor: pointer;
   }
 
@@ -536,11 +536,11 @@ ul.flow-list li::before {
   }
 
   .mobile-nav-content a:hover {
-    color: var(--caat-gold);
+    color: var(--caat-yellow);
   }
 
   .mobile-login-btn {
-    border: 2px solid var(--caat-gold);
+    border: 2px solid var(--caat-yellow);
     padding: 0.5rem 2rem;
     border-radius: 4px;
     margin-top: 1rem;

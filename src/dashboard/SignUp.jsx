@@ -46,7 +46,7 @@ export default function SignUp() {
             <div className="card" style={{ width: '100%', maxWidth: '400px' }}>
                 <form onSubmit={handleSignUp} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                     <div>
-                        <label style={{ display: 'block', marginBottom: '.5rem', color: 'var(--caat-gold)' }}>Email</label>
+                        <label style={{ display: 'block', marginBottom: '.5rem', color: 'var(--caat-yellow)' }}>Email</label>
                         <input
                             type="email"
                             value={email}
@@ -56,7 +56,7 @@ export default function SignUp() {
                         />
                     </div>
                     <div>
-                        <label style={{ display: 'block', marginBottom: '.5rem', color: 'var(--caat-gold)' }}>Password</label>
+                        <label style={{ display: 'block', marginBottom: '.5rem', color: 'var(--caat-yellow)' }}>Password</label>
                         <input
                             type="password"
                             value={password}
@@ -71,7 +71,7 @@ export default function SignUp() {
                         {loading ? 'Creating Account...' : 'Sign Up'}
                     </button>
                     <div style={{ textAlign: 'center', marginTop: '1rem', fontSize: '0.9rem' }}>
-                        Already have an account? <Link to="/login" style={{ color: 'var(--caat-gold)' }}>Log In</Link>
+                        Already have an account? <Link to="/login" style={{ color: 'var(--caat-yellow)' }}>Log In</Link>
                     </div>
                 </form>
             </div>

@@ -59,7 +59,7 @@ export default function DashboardLayout() {
     return (
         <div style={{ display: 'flex', minHeight: '100vh', background: '#111', color: '#fff' }}>
             <aside style={{ width: '250px', background: '#000', borderRight: '1px solid #333', padding: '1.5rem', display: 'flex', flexDirection: 'column' }}>
-                <h2 style={{ color: 'var(--caat-gold)', fontSize: '1.2rem', marginBottom: '0.5rem' }}>MLK Ops</h2>
+                <h2 style={{ color: 'var(--caat-yellow)', fontSize: '1.2rem', marginBottom: '0.5rem' }}>MLK Ops</h2>
 
                 {/* Environment Status Indicator */}
                 <div style={{ marginBottom: '2rem', fontSize: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>

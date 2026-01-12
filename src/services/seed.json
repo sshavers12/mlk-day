@@ -2,11 +2,11 @@
     {
         "slug": "station-01-cafeteria",
         "title": "Station 01: Cafeteria",
-        "map_visual_url": "assets/images/station_01_map.png",
+        "map_visual_url": "assets/images/station_00_poster_map_1768200644777.png",
         "experience_visual_urls": [
-            "assets/images/station_01_exp.png"
+            "assets/images/station_00_experience_1768200664028.png"
         ],
-        "poster_url": "assets/images/station_01_poster.png",
+        "poster_url": "assets/images/station_00_poster_map_1768200644777.png",
         "story": "The Gathering. The starting point.",
         "description": "Like the mass meetings of the civil rights era, we begin with community orientation. Opening + Remarks.",
         "youtube_url": "",
@@ -18,11 +18,11 @@
     {
         "slug": "station-02-alumni-hall",
         "title": "Station 02: Alumni Hall",
-        "map_visual_url": "assets/images/station_02_map.png",
+        "map_visual_url": "assets/images/station_01_poster_map_1768200680016.png",
         "experience_visual_urls": [
-            "assets/images/station_02_exp.png"
+            "assets/images/station_01_experience_1768200697024.png"
         ],
-        "poster_url": "assets/images/station_02_poster.png",
+        "poster_url": "assets/images/station_01_poster_map_1768200680016.png",
         "story": "The Threshold.",
         "description": "We exit the comfort of the gathering and walk to the Auditorium. This is the space of confrontation and history.",
         "youtube_url": "",
@@ -34,11 +34,11 @@
     {
         "slug": "station-03-harris-hall",
         "title": "Station 03: Harris Hall",
-        "map_visual_url": "assets/images/station_03_map.png",
+        "map_visual_url": "assets/images/station_02_poster_map_1768200722625.png",
         "experience_visual_urls": [
-            "assets/images/station_03_exp.png"
+            "assets/images/station_02_experience_1768200742586.png"
         ],
-        "poster_url": "assets/images/station_03_poster.png",
+        "poster_url": "assets/images/station_02_poster_map_1768200722625.png",
         "story": "The Processing.",
         "description": "A necessary pause. Community Art & Processing. Here you are invited to create and add your mark.",
         "youtube_url": "",
@@ -50,11 +50,11 @@
     {
         "slug": "station-04-lathem-hall",
         "title": "Station 04: Lathem Hall",
-        "map_visual_url": "assets/images/station_04_map.png",
+        "map_visual_url": "assets/images/station_03_poster_map_1768200757815.png",
         "experience_visual_urls": [
-            "assets/images/station_04_exp.png"
+            "assets/images/station_03_experience_1768200773847.png"
         ],
-        "poster_url": "assets/images/station_04_poster.png",
+        "poster_url": "assets/images/station_03_poster_map_1768200757815.png",
         "story": "The Reflection.",
         "description": "The core interactive zone. Digital Collection: Preparation / Beloved Community.",
         "youtube_url": "",
@@ -66,7 +66,7 @@
     {
         "slug": "sub-belief",
         "title": "Belief",
-        "poster_url": "assets/images/sub_belief.jpg",
+        "poster_url": "assets/images/sub_belief.png",
         "description": "Name the conviction that holds you steady.",
         "youtube_url": "",
         "display_order": 1,
@@ -77,7 +77,7 @@
     {
         "slug": "sub-courage",
         "title": "Courage",
-        "poster_url": "assets/images/sub_courage.jpg",
+        "poster_url": "assets/images/sub_courage.png",
         "description": "Call out the moment you choose bravery.",
         "youtube_url": "",
         "display_order": 2,
@@ -88,7 +88,7 @@
     {
         "slug": "sub-identity",
         "title": "Identity",
-        "poster_url": "assets/images/sub_identity.jpg",
+        "poster_url": "assets/images/sub_identity.png",
         "description": "Who are you when nobody is watching?",
         "youtube_url": "",
         "display_order": 3,
@@ -99,7 +99,7 @@
     {
         "slug": "sub-listening",
         "title": "Listening",
-        "poster_url": "assets/images/sub_listening.jpg",
+        "poster_url": "assets/images/sub_listening.png",
         "description": "Justice starts when we listen.",
         "youtube_url": "",
         "display_order": 4,
@@ -110,7 +110,7 @@
     {
         "slug": "sub-preparation",
         "title": "Preparation",
-        "poster_url": "assets/images/sub_preparation.jpg",
+        "poster_url": "assets/images/sub_preparation.png",
         "description": "Freedom is built. What are you training for?",
         "youtube_url": "",
         "display_order": 5,

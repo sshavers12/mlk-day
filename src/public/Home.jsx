@@ -6,7 +6,7 @@ export default function Home() {
         <>
             <header className="container" style={{ paddingTop: '4rem' }}>
                 <span className="subtitle">Chester Cultural Arts & Technology Center</span>
-                <h1>Reclaiming the <span style={{ color: 'var(--caat-gold)' }}>Dream</span></h1>
+                <h1>Reclaiming the <span style={{ color: 'var(--caat-yellow)' }}>Dream</span></h1>
                 <p style={{ marginTop: '1rem', borderLeft: '2px solid #333', paddingLeft: '1rem' }}>
                     Dr. Martin Luther King Jr. • Chester, Pennsylvania<br />
                     A living civic curriculum and digital archive.

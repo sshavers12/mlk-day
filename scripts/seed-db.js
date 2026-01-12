@@ -53,7 +53,7 @@ async function seed() {
     }
 
     // 2. Stations
-    const stations = seedData.filter(item => item.type === 'station');
+    const stations = seedData.filter(item => item.type === 'station' || item.type === 'sub_station');
     console.log(`Found ${stations.length} stations.`);
 
     for (const st of stations) {

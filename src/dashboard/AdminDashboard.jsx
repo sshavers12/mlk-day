@@ -73,7 +73,7 @@ export default function AdminDashboard() {
 
                 {/* STATION STATUS CARD */}
                 <div className="card">
-                    <h3 style={{ margin: '0 0 1rem 0', color: 'var(--caat-gold)' }}>Station Status</h3>
+                    <h3 style={{ margin: '0 0 1rem 0', color: 'var(--caat-yellow)' }}>Station Status</h3>
 
                     {stations.map(st => {
                         const stStatus = statuses[st.id]?.status || 'unknown';
@@ -94,7 +94,7 @@ export default function AdminDashboard() {
 
                 {/* SUBMISSIONS QUEUE CARD */}
                 <div className="card">
-                    <h3 style={{ margin: '0 0 1rem 0', color: 'var(--caat-gold)' }}>Pending Approvals</h3>
+                    <h3 style={{ margin: '0 0 1rem 0', color: 'var(--caat-yellow)' }}>Pending Approvals</h3>
 
                     {pendingSubmissions.length === 0 ? (
                         <p style={{ color: '#aaa', fontStyle: 'italic' }}>No pending submissions.</p>
