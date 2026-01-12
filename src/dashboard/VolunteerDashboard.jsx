@@ -79,7 +79,7 @@ export default function VolunteerDashboard() {
 
             const { error } = await supabase
                 .from('station_status')
-                .upsert(updates);
+                .upsert(updates, { onConflict: 'station_id' });
 
             if (error) throw error;
             // Optimistic update handled by subscription mostly, but we can set it too

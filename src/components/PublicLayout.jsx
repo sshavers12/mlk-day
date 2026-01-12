@@ -27,7 +27,7 @@ export default function PublicLayout() {
                         <li><Link to="/stations" style={isActive('/stations') ? { color: 'var(--caat-yellow)' } : {}}>Latham Stations</Link></li>
                         <li><a href="/#community-voice">Community Voice</a></li>
                         <li><a href="#" onClick={(e) => { e.preventDefault(); toggleAssistant(); }}>Exhibit Guide</a></li>
-                        <li><Link to="/login" style={{ border: '1px solid #333', padding: '0.2rem 0.8rem', borderRadius: '4px' }}>Login</Link></li>
+                        {/* <li><Link to="/login" style={{ border: '1px solid #333', padding: '0.2rem 0.8rem', borderRadius: '4px' }}>Login</Link></li> */}
                     </ul>
 
                     {/* Mobile Hamburger */}
@@ -49,7 +49,7 @@ export default function PublicLayout() {
                     <Link to="/stations" onClick={() => setShowMobileMenu(false)} style={isActive('/stations') ? { color: 'var(--caat-yellow)' } : {}}>Latham Stations</Link>
                     <a href="/#community-voice" onClick={() => setShowMobileMenu(false)}>Community Voice</a>
                     <a href="#" onClick={(e) => { e.preventDefault(); toggleAssistant(); setShowMobileMenu(false); }}>Exhibit Guide</a>
-                    <Link to="/login" onClick={() => setShowMobileMenu(false)} className="mobile-login-btn">Login</Link>
+                    {/* <Link to="/login" onClick={() => setShowMobileMenu(false)} className="mobile-login-btn">Login</Link> */}
                 </nav>
             </div>
 

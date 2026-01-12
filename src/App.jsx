@@ -27,7 +27,8 @@ function App() {
       </Route>
 
       <Route path="/login" element={<Login />} />
-      <Route path="/signup" element={<SignUp />} />
+      <Route path="/login" element={<Login />} />
+      {/* <Route path="/signup" element={<SignUp />} /> Public signup disabled */}
 
       <Route path="/dashboard" element={<DashboardLayout />}>
         <Route index element={<AdminDashboard />} /> {/* Default to Admin for now, or maybe a Gateway page? */}

@@ -57,9 +57,15 @@ export default function DashboardLayout() {
     // I'll adjust App.jsx structure later. For now, this layout assumes it wraps protected routes.
 
     return (
-        <div style={{ display: 'flex', minHeight: '100vh', background: '#111', color: '#fff' }}>
-            <aside style={{ width: '250px', background: '#000', borderRight: '1px solid #333', padding: '1.5rem', display: 'flex', flexDirection: 'column' }}>
-                <h2 style={{ color: 'var(--caat-yellow)', fontSize: '1.2rem', marginBottom: '0.5rem' }}>MLK Ops</h2>
+        <div className="dashboard-container">
+            {/* Mobile Header */}
+            <header className="dashboard-mobile-header">
+                <span className="logo">MLK Ops</span>
+                <button className="menu-toggle" onClick={() => navigate('/')}>Exit</button>
+            </header>
+
+            <aside className={`dashboard-sidebar`}>
+                <h2 className="desktop-logo" style={{ color: 'var(--caat-yellow)', fontSize: '1.2rem', marginBottom: '0.5rem' }}>MLK Ops</h2>
 
                 {/* Environment Status Indicator */}
                 <div style={{ marginBottom: '2rem', fontSize: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
@@ -76,28 +82,28 @@ export default function DashboardLayout() {
                     )}
                 </div>
 
-                <nav style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                <nav className="dashboard-nav">
                     {session?.role === 'admin' || session?.user?.email === 'admin@test.com' ? (
                         <>
-                            <Link to="/dashboard/admin" style={{ color: '#fff', textDecoration: 'none' }}>Overview</Link>
-                            <Link to="/dashboard/admin/locations" style={{ color: '#aaa', textDecoration: 'none' }}>Locations</Link>
-                            <Link to="/dashboard/admin/stations" style={{ color: '#aaa', textDecoration: 'none' }}>Stations</Link>
-                            <Link to="/dashboard/admin/volunteers" style={{ color: '#aaa', textDecoration: 'none' }}>Volunteers</Link>
+                            <Link to="/dashboard/admin" className="nav-item">Overview</Link>
+                            <Link to="/dashboard/admin/locations" className="nav-item dim">Locations</Link>
+                            <Link to="/dashboard/admin/stations" className="nav-item dim">Stations</Link>
+                            <Link to="/dashboard/admin/volunteers" className="nav-item dim">Volunteers</Link>
                         </>
                     ) : (
-                        <Link to="/dashboard/volunteer" style={{ color: '#fff', textDecoration: 'none' }}>My Station</Link>
+                        <Link to="/dashboard/volunteer" className="nav-item">My Station</Link>
                     )}
                 </nav>
 
-                <div style={{ marginTop: 'auto' }}>
-                    <div style={{ fontSize: '.8rem', color: '#666', marginBottom: '1rem' }}>
+                <div className="dashboard-footer">
+                    <div className="user-info">
                         Logged in as:<br />{session?.user?.email}
                     </div>
-                    <button onClick={handleLogout} className="btn" style={{ fontSize: '.8rem', padding: '.5rem 1rem' }}>Logout</button>
+                    <button onClick={handleLogout} className="btn logout-btn">Logout</button>
                 </div>
             </aside>
 
-            <main style={{ flexGrow: 1, padding: '2rem', overflowY: 'auto' }}>
+            <main className="dashboard-main">
                 <Outlet />
             </main>
         </div>
