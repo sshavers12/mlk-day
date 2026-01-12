@@ -1,10 +1,15 @@
 :root {
-  --caat-gold: #FFD400;
+  --caat-gold: #FFFFFF;
+  /* Was Gold, now White for high contrast */
   --caat-black: #000000;
-  --caat-panel: #1A1A1A;
+  --caat-panel: #111111;
+  /* Darker panel */
   --caat-white: #FFFFFF;
-  --caat-gray: #B0B0B0;
+  --caat-gray: #CCCCCC;
+  /* Lighter gray for readability against black */
   --font-main: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-serif: 'Georgia', 'Times New Roman', serif;
+  /* Added for architectural/documentary headers */
   --spacing-unit: 1.5rem;
   --nav-height: 70px;
 }
@@ -39,24 +44,33 @@ h1,
 h2,
 h3,
 h4 {
-  font-weight: 700;
+  font-family: var(--font-serif);
+  font-weight: 400;
+  /* Lighter weight for elegance */
   line-height: 1.2;
   margin-bottom: 1rem;
+  letter-spacing: 0.05em;
 }
 
 h1 {
   font-size: 2.5rem;
-  letter-spacing: -0.02em;
   text-transform: uppercase;
   color: var(--caat-white);
+  border-bottom: 1px solid var(--caat-white);
+  /* Architectural line */
+  padding-bottom: 0.5rem;
+  display: inline-block;
 }
 
 h2 {
   font-size: 1.75rem;
   color: var(--caat-white);
-  border-left: 4px solid var(--caat-gold);
-  padding-left: 1rem;
+  border-left: none;
+  /* Remove the gold bar */
+  padding-left: 0;
   margin-top: 2rem;
+  font-style: italic;
+  /* Documentary style */
 }
 
 h3 {
