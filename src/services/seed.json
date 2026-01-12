@@ -66,7 +66,7 @@
     {
         "slug": "sub-belief",
         "title": "Belief",
-        "poster_url": "assets/images/sub_belief.png",
+        "poster_url": "assets/images/station-01-belief.png",
         "description": "Name the conviction that holds you steady.",
         "youtube_url": "",
         "display_order": 1,
@@ -77,7 +77,7 @@
     {
         "slug": "sub-courage",
         "title": "Courage",
-        "poster_url": "assets/images/sub_courage.png",
+        "poster_url": "assets/images/station-02-courage.png",
         "description": "Call out the moment you choose bravery.",
         "youtube_url": "",
         "display_order": 2,
@@ -88,7 +88,7 @@
     {
         "slug": "sub-identity",
         "title": "Identity",
-        "poster_url": "assets/images/sub_identity.png",
+        "poster_url": "assets/images/station-03-identity.png",
         "description": "Who are you when nobody is watching?",
         "youtube_url": "",
         "display_order": 3,
@@ -99,7 +99,7 @@
     {
         "slug": "sub-listening",
         "title": "Listening",
-        "poster_url": "assets/images/sub_listening.png",
+        "poster_url": "assets/images/station-04-listening.png",
         "description": "Justice starts when we listen.",
         "youtube_url": "",
         "display_order": 4,
@@ -110,7 +110,7 @@
     {
         "slug": "sub-preparation",
         "title": "Preparation",
-        "poster_url": "assets/images/sub_preparation.png",
+        "poster_url": "assets/images/station-05-preparation.png",
         "description": "Freedom is built. What are you training for?",
         "youtube_url": "",
         "display_order": 5,
