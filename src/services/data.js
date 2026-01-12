@@ -1,48 +1,21 @@
-import { supabase } from '../lib/supabase';
-import seedData from './seed.json';
-
-const isSupabaseConfigured = () => {
-    const url = import.meta.env.VITE_SUPABASE_URL;
-    return url && !url.includes('placeholder') && !url.includes('YOUR_SUPABASE_URL');
-};
+import { locations, lathamStations } from '../config/content';
 
 export async function getCreateLocations() {
-    if (!isSupabaseConfigured()) {
-        console.warn('Supabase not configured. Serving from local seed.');
-        return seedData.filter(item => !item.type); // Locations usually don't have 'type' or use different filtering if needed. 
-        // Based on seed.json, locations are the first 4 items without "type": "station"
-    }
-
-    const { data, error } = await supabase
-        .from('locations')
-        .select('*')
-        .eq('is_published', true)
-        .order('display_order');
-
-    if (error || !data || data.length === 0) {
-        if (error) console.error('Error fetching locations:', error);
-        return seedData.filter(item => !item.type);
-    }
-    return data;
+    // Return static locations from config
+    return locations;
 }
 
 export async function getCreateStations() {
-    if (!isSupabaseConfigured()) {
-        console.warn('Supabase not configured. Serving from local seed.');
-        return seedData.filter(item => item.type === 'station');
-    }
+    // Return static lathamStations from config
+    // Note: The UI expects "stations" to be the 5 sub-stations in Latham Hall 
+    // or the building stations? 
+    // The prompt says "Latham Hall has exactly 5 stations...". 
+    // Previous code had "stations" as the buildings themselves in some contexts, 
+    // but the new requirement separates "Building Detail" vs "Latham Stations".
+    // content.js defines lathamStations as the 5 stations.
 
-    const { data, error } = await supabase
-        .from('stations')
-        .select('*')
-        .eq('is_published', true)
-        .order('display_order');
-
-    if (error || !data || data.length === 0) {
-        if (error) console.error('Error fetching stations:', error);
-        return seedData.filter(item => item.type === 'station');
-    }
-    return data;
+    // We map them to match expected shape if needed, but for now passing through.
+    return lathamStations;
 }
 
 export async function getCreateAnnouncements() {

@@ -318,10 +318,31 @@ ul.flow-list li::before {
   position: relative;
 }
 
+/* Station Poster Opacity Fix */
 .station-poster img {
   width: 100%;
   height: 100%;
-  opacity: .92;
+  opacity: 1;
+  /* Was .92 */
+}
+
+/* Mobile Nav Overlay Z-Index Fix */
+.mobile-nav-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.98);
+  /* Slightly darker */
+  z-index: 10000;
+  /* Higher than assistant widget */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
 }
 
 
@@ -545,6 +566,7 @@ ul.flow-list li::before {
     display: none;
   }
 }
+
 /* Dashboard App Layout */
 .dashboard-container {
   display: flex;
@@ -579,12 +601,14 @@ ul.flow-list li::before {
   text-decoration: none;
   font-size: 1rem;
 }
+
 .nav-item.dim {
   color: #aaa;
 }
 
 .dashboard-mobile-header {
-  display: none; /* Hidden on desktop */
+  display: none;
+  /* Hidden on desktop */
   background: #000;
   padding: 1rem;
   border-bottom: 1px solid #333;
@@ -613,14 +637,14 @@ ul.flow-list li::before {
   .dashboard-container {
     flex-direction: column;
   }
-  
+
   .dashboard-sidebar {
     width: 100%;
     border-right: none;
     border-bottom: 1px solid #333;
     padding: 1rem;
   }
-  
+
   .dashboard-main {
     padding: 1rem;
   }
@@ -636,13 +660,13 @@ ul.flow-list li::before {
     gap: 1.5rem;
     margin-bottom: 1rem;
   }
-  
+
   .dashboard-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  
+
   .logout-btn {
     width: auto;
   }

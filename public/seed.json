@@ -16,8 +16,8 @@
         "qr_instruction": "Scan to view the detailed schedule and opening remarks."
     },
     {
-        "slug": "station-02-alumni-hall",
-        "title": "Station 02: Alumni Hall",
+        "slug": "station-02-alumni-auditorium",
+        "title": "Station 02: Alumni Auditorium",
         "map_visual_url": "assets/images/station_02_map.png",
         "experience_visual_urls": [
             "assets/images/station_02_exp.png"
@@ -29,7 +29,7 @@
         "display_order": 2,
         "type": "station",
         "volunteer_script": "This is The Threshold. It is a space of history and confrontation. We invite you to enter quietly and observe.",
-        "qr_instruction": "Scan to read about the historical significance of Alumni Hall."
+        "qr_instruction": "Scan to read about the historical significance of Alumni Auditorium."
     },
     {
         "slug": "station-03-harris-hall",

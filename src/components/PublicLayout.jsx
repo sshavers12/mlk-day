@@ -23,10 +23,10 @@ export default function PublicLayout() {
                     <ul className="caat-nav-links">
                         <li><Link to="/" style={isActive('/') ? { color: 'var(--caat-yellow)' } : {}}>Overview</Link></li>
                         <li><a href="/#journey-map">Experience Flow</a></li>
-                        <li><Link to="/locations" style={isActive('/locations') ? { color: 'var(--caat-yellow)' } : {}}>Campus Locations</Link></li>
-                        <li><Link to="/stations" style={isActive('/stations') ? { color: 'var(--caat-yellow)' } : {}}>Latham Stations</Link></li>
+                        {/* <li><Link to="/locations" style={isActive('/locations') ? { color: 'var(--caat-yellow)' } : {}}>Campus Locations</Link></li> */}
+                        <li><Link to="/latham-stations" style={isActive('/latham-stations') ? { color: 'var(--caat-yellow)' } : {}}>Latham Stations</Link></li>
                         <li><a href="/#community-voice">Community Voice</a></li>
-                        <li><a href="#" onClick={(e) => { e.preventDefault(); toggleAssistant(); }}>Exhibit Guide</a></li>
+                        <li className="desktop-only"><a href="#" onClick={(e) => { e.preventDefault(); toggleAssistant(); }}>Exhibit Guide</a></li>
                         {/* <li><Link to="/login" style={{ border: '1px solid #333', padding: '0.2rem 0.8rem', borderRadius: '4px' }}>Login</Link></li> */}
                     </ul>
 
@@ -45,8 +45,8 @@ export default function PublicLayout() {
                 <nav className="mobile-nav-content">
                     <Link to="/" onClick={() => setShowMobileMenu(false)} style={isActive('/') ? { color: 'var(--caat-yellow)' } : {}}>Overview</Link>
                     <a href="/#journey-map" onClick={() => setShowMobileMenu(false)}>Experience Flow</a>
-                    <Link to="/locations" onClick={() => setShowMobileMenu(false)} style={isActive('/locations') ? { color: 'var(--caat-yellow)' } : {}}>Campus Locations</Link>
-                    <Link to="/stations" onClick={() => setShowMobileMenu(false)} style={isActive('/stations') ? { color: 'var(--caat-yellow)' } : {}}>Latham Stations</Link>
+                    {/* <Link to="/locations" onClick={() => setShowMobileMenu(false)} style={isActive('/locations') ? { color: 'var(--caat-yellow)' } : {}}>Campus Locations</Link>  */}
+                    <Link to="/latham-stations" onClick={() => setShowMobileMenu(false)} style={isActive('/latham-stations') ? { color: 'var(--caat-yellow)' } : {}}>Latham Stations</Link>
                     <a href="/#community-voice" onClick={() => setShowMobileMenu(false)}>Community Voice</a>
                     <a href="#" onClick={(e) => { e.preventDefault(); toggleAssistant(); setShowMobileMenu(false); }}>Exhibit Guide</a>
                     {/* <Link to="/login" onClick={() => setShowMobileMenu(false)} className="mobile-login-btn">Login</Link> */}
@@ -66,7 +66,7 @@ export default function PublicLayout() {
                 </footer>
             </div>
 
-            <button id="assistant-btn" onClick={toggleAssistant}>Exhibit Guide</button>
+            <button id="assistant-btn" onClick={toggleAssistant} style={{ display: showMobileMenu ? 'none' : 'block' }}>Exhibit Guide</button>
 
             <div
                 id="assistant-panel"
