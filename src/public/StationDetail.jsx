@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { getCreateStations } from '../services/data';
+import CommunitySubmission from './CommunitySubmission';
 
 export default function StationDetail() {
     const { slug } = useParams();
@@ -40,6 +41,8 @@ export default function StationDetail() {
                     </Link>
                 </div>
             </div>
+
+            <CommunitySubmission stationId={station.id} stationTitle={station.title} />
         </div>
     );
 }

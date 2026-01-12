@@ -4,6 +4,7 @@ import '../styles/global.css';
 
 export default function PublicLayout() {
     const [showAssistant, setShowAssistant] = useState(false);
+    const [showMobileMenu, setShowMobileMenu] = useState(false);
     const location = useLocation();
     const exhibitGuideUrl = import.meta.env.VITE_EXHIBIT_GUIDE_URL || 'https://app-693118592482.us-west1.run.app';
 
@@ -17,6 +18,8 @@ export default function PublicLayout() {
             <nav className="caat-sticky-nav">
                 <div className="caat-nav-inner">
                     <Link to="/" className="caat-logo">CAAT MLK 2026</Link>
+
+                    {/* Desktop Nav */}
                     <ul className="caat-nav-links">
                         <li><Link to="/" style={isActive('/') ? { color: 'var(--caat-gold)' } : {}}>Overview</Link></li>
                         <li><a href="/#journey-map">Experience Flow</a></li>
@@ -26,8 +29,29 @@ export default function PublicLayout() {
                         <li><a href="#" onClick={(e) => { e.preventDefault(); toggleAssistant(); }}>Exhibit Guide</a></li>
                         <li><Link to="/login" style={{ border: '1px solid #333', padding: '0.2rem 0.8rem', borderRadius: '4px' }}>Login</Link></li>
                     </ul>
+
+                    {/* Mobile Hamburger */}
+                    <button className="mobile-menu-btn" onClick={() => setShowMobileMenu(!showMobileMenu)} aria-label="Menu">
+                        <span className="bar"></span>
+                        <span className="bar"></span>
+                        <span className="bar"></span>
+                    </button>
                 </div>
             </nav>
+
+            {/* Mobile Menu Overlay */}
+            <div className={`mobile-nav-overlay ${showMobileMenu ? 'open' : ''}`}>
+                <button className="mobile-menu-close" onClick={() => setShowMobileMenu(false)}>&times;</button>
+                <nav className="mobile-nav-content">
+                    <Link to="/" onClick={() => setShowMobileMenu(false)} style={isActive('/') ? { color: 'var(--caat-gold)' } : {}}>Overview</Link>
+                    <a href="/#journey-map" onClick={() => setShowMobileMenu(false)}>Experience Flow</a>
+                    <Link to="/locations" onClick={() => setShowMobileMenu(false)} style={isActive('/locations') ? { color: 'var(--caat-gold)' } : {}}>Campus Locations</Link>
+                    <Link to="/stations" onClick={() => setShowMobileMenu(false)} style={isActive('/stations') ? { color: 'var(--caat-gold)' } : {}}>Latham Stations</Link>
+                    <a href="/#community-voice" onClick={() => setShowMobileMenu(false)}>Community Voice</a>
+                    <a href="#" onClick={(e) => { e.preventDefault(); toggleAssistant(); setShowMobileMenu(false); }}>Exhibit Guide</a>
+                    <Link to="/login" onClick={() => setShowMobileMenu(false)} className="mobile-login-btn">Login</Link>
+                </nav>
+            </div>
 
             {/* Main Content Rendered Here */}
             <Outlet />
@@ -57,6 +81,8 @@ export default function PublicLayout() {
                         id="panel-iframe"
                         src={exhibitGuideUrl}
                         title="Exhibit Assistant"
+                        allow="microphone; clipboard-write; clipboard-read;"
+                        sandbox="allow-scripts allow-same-origin allow-forms allow-popups"
                     ></iframe>
                 )}
             </div>
