@@ -3,50 +3,50 @@ import { Link } from 'react-router-dom';
 
 const formsData = [
     {
-        title: 'Alumni Hall Reflection – The Threshold',
-        url: 'https://docs.google.com/forms/d/e/1FAIpQLSdgaY4LMlHIeiSQHiCLZMijitqtNfb6ItuSspkSf6p_t0CA3A/viewform',
+        title: 'Alumni Auditorium Reflection – The Threshold',
+        url: 'https://forms.gle/h9mDQD6VmSKXudCy8',
         qr_png: 'assets/qr/forms/alumni_hall_reflection_the_threshold.png',
         qr_svg: 'assets/qr/forms/alumni_hall_reflection_the_threshold.svg'
     },
     {
-        title: 'Harris Hall Reflection – I Belong Here',
-        url: 'https://docs.google.com/forms/d/e/1FAIpQLSduQ9K2m3AQvemmWCWmwx69jiQ-JrC4Npey3V8ldMQXcKRBkQ/viewform',
+        title: 'Harris Commons Reflection – I Belong Here',
+        url: 'https://forms.gle/AZkjHyJomud5kSWB9',
         qr_png: 'assets/qr/forms/harris_hall_reflection_i_belong_here.png',
         qr_svg: 'assets/qr/forms/harris_hall_reflection_i_belong_here.svg'
     },
     {
-        title: 'Lathem Hall Contributions – Beloved Community',
-        url: 'https://docs.google.com/forms/d/e/1FAIpQLSe3__0j4QE9FYZEb4rJQtcIV2GfBn2OJgtzMN-mY9Q3F0MAvw/viewform',
+        title: 'Latham Hall Reflection (General)',
+        url: 'https://forms.gle/RovCjyBRKCiAzsus5', // Using general link
         qr_png: 'assets/qr/forms/lathem_hall_contributions_beloved_community.png',
         qr_svg: 'assets/qr/forms/lathem_hall_contributions_beloved_community.svg'
     },
     {
-        title: 'Lathem Station — Belief',
-        url: 'https://docs.google.com/forms/d/e/1FAIpQLSfYzNGTWTwmac6xj3WFoP_nI6geEWGi79o0pyWbQ1HfeWi2hA/viewform',
+        title: 'Latham Station — Belief',
+        url: 'https://forms.gle/4qUPwmwY72iuqDiF8',
         qr_png: 'assets/qr/forms/lathem_hall_station_belief_mlk_2026.png',
         qr_svg: 'assets/qr/forms/lathem_hall_station_belief_mlk_2026.svg'
     },
     {
-        title: 'Lathem Station — Listening',
-        url: 'https://docs.google.com/forms/d/e/1FAIpQLSf5rd7geOO7bRig_sGTz3UNnu4I4gDCVhskP9EAPRvJLXqZ8w/viewform',
+        title: 'Latham Station — Listening',
+        url: 'https://forms.gle/QXui3Unys5rZQ2RV8',
         qr_png: 'assets/qr/forms/lathem_hall_station_listening_mlk_2026.png',
         qr_svg: 'assets/qr/forms/lathem_hall_station_listening_mlk_2026.svg'
     },
     {
-        title: 'Lathem Station — Courage',
-        url: 'https://docs.google.com/forms/d/e/1FAIpQLSe3-GMnb3PONpvKniHwleDTyocOE1j5Z6VishnjM7kAd1I1uQ/viewform',
+        title: 'Latham Station — Courage',
+        url: 'https://forms.gle/wWNAwXVegBir5Ags5',
         qr_png: 'assets/qr/forms/lathem_hall_station_courage_mlk_2026.png',
         qr_svg: 'assets/qr/forms/lathem_hall_station_courage_mlk_2026.svg'
     },
     {
-        title: 'Lathem Station — Identity',
-        url: 'https://docs.google.com/forms/d/e/1FAIpQLSeeRLmifeAOwOSMcY_clrj1jfB70AdRc_-h9DQ68Uvvz_P5xQ/viewform',
+        title: 'Latham Station — Identity',
+        url: 'https://forms.gle/z8UGRukU9v9mgH1s7',
         qr_png: 'assets/qr/forms/lathem_hall_station_identity_mlk_2026.png',
         qr_svg: 'assets/qr/forms/lathem_hall_station_identity_mlk_2026.svg'
     },
     {
-        title: 'Lathem Station — Preparation',
-        url: 'https://docs.google.com/forms/d/e/1FAIpQLSecK0YBANxwZdAzHm5PdBDc1yiG-HV9iAZdVe_aWHO7E2MmzA/viewform',
+        title: 'Latham Station — Preparation',
+        url: 'https://forms.gle/6x8UYfP2j9BLyLTQ6',
         qr_png: 'assets/qr/forms/lathem_hall_station_preparation_mlk_2026.png',
         qr_svg: 'assets/qr/forms/lathem_hall_station_preparation_mlk_2026.svg'
     }
