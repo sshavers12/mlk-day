@@ -20,16 +20,16 @@ export default function Home() {
                     <h1 style={{ fontSize: '2.5rem', lineHeight: '1.2', marginBottom: '1rem' }}>
                         MLK Day of Service & Reflection — <span style={{ color: 'var(--caat-yellow)' }}>The Chester Experience</span>
                     </h1>
-                    <h2 className="subtitle" style={{ fontSize: '1.2rem', color: '#ccc', marginBottom: '1.5rem', fontWeight: '400', maxWidth: '800px', textTransform: 'none', letterSpacing: 'normal' }}>
-                        A Community Partnership Between Widener University and the Chester Cultural Arts & Technology Center (CAAT)
-                    </h2>
-                    <p style={{ fontSize: '1.1rem', color: '#888', maxWidth: '700px', marginBottom: '2rem' }}>
-                        A self-guided, campus-wide experience grounded in verified history, reflection, and community contribution.
+                    <p className="hero-subheadline" style={{ fontSize: '1.2rem', color: '#ccc', marginBottom: '1.5rem', fontWeight: '400', maxWidth: '800px', lineHeight: '1.5' }}>
+                        A multi-organizational, campus-wide experience rooted in verified history, reflection, and community contribution.
+                    </p>
+                    <p className="hero-supporting" style={{ fontSize: '1.1rem', color: '#888', maxWidth: '700px', marginBottom: '2rem' }}>
+                        Visitors are invited to move through guided locations at their own pace, engaging with history, art, and shared expression.
                     </p>
 
-                    <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-                        <a href="#overview" className="btn">Explore the Experience</a>
-                        <a href="#journey-map" className="btn" style={{ background: 'transparent', border: '1px solid #666', color: '#ccc' }}>View Exhibit Locations</a>
+                    <div className="hero-cta" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+                        <a href="#locations" className="btn">Explore the Experience</a>
+                        <Link to="/forms" className="btn" style={{ background: 'transparent', border: '1px solid #666', color: '#ccc' }}>View Exhibit Locations</Link>
                     </div>
                 </div>
             </header>
@@ -41,7 +41,7 @@ export default function Home() {
                     <p>Dr. King’s time in Chester was defined by preparation, academic rigor, and the crystallization of his philosophy of nonviolence. Today, we retrace those steps—physically and reflectively.</p>
                 </section>
 
-                <section id="journey-map">
+                <section id="locations">
                     <h2>Experience Flow</h2>
                     <p>The experience is a progression across four distinct locations on campus, each representing a stage of civic engagement.</p>
 

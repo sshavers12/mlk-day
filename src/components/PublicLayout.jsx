@@ -22,7 +22,7 @@ export default function PublicLayout() {
                     {/* Desktop Nav */}
                     <ul className="caat-nav-links">
                         <li><Link to="/" style={isActive('/') ? { color: 'var(--caat-yellow)' } : {}}>Overview</Link></li>
-                        <li><a href="/#journey-map">Experience Flow</a></li>
+                        <li><a href="/#locations">Experience Flow</a></li>
                         {/* <li><Link to="/locations" style={isActive('/locations') ? { color: 'var(--caat-yellow)' } : {}}>Campus Locations</Link></li> */}
                         <li><Link to="/latham-stations" style={isActive('/latham-stations') ? { color: 'var(--caat-yellow)' } : {}}>Latham Stations</Link></li>
                         <li><Link to="/forms" style={isActive('/forms') ? { color: 'var(--caat-yellow)' } : {}}>Forms</Link></li>
@@ -45,7 +45,7 @@ export default function PublicLayout() {
                 <button className="mobile-menu-close" onClick={() => setShowMobileMenu(false)}>&times;</button>
                 <nav className="mobile-nav-content">
                     <Link to="/" onClick={() => setShowMobileMenu(false)} style={isActive('/') ? { color: 'var(--caat-yellow)' } : {}}>Overview</Link>
-                    <a href="/#journey-map" onClick={() => setShowMobileMenu(false)}>Experience Flow</a>
+                    <a href="/#locations" onClick={() => setShowMobileMenu(false)}>Experience Flow</a>
                     {/* <Link to="/locations" onClick={() => setShowMobileMenu(false)} style={isActive('/locations') ? { color: 'var(--caat-yellow)' } : {}}>Campus Locations</Link>  */}
                     <Link to="/latham-stations" onClick={() => setShowMobileMenu(false)} style={isActive('/latham-stations') ? { color: 'var(--caat-yellow)' } : {}}>Latham Stations</Link>
                     <Link to="/forms" onClick={() => setShowMobileMenu(false)} style={isActive('/forms') ? { color: 'var(--caat-yellow)' } : {}}>Forms</Link>

@@ -25,7 +25,7 @@ export const locations = [
         form_url: 'https://forms.gle/h9mDQD6VmSKXudCy8',
         qr_instruction: 'After viewing the video, scan the QR code to answer a few short reflection questions.',
         volunteer_script: 'This is The Threshold. It is a space of history and confrontation. We invite you to enter quietly and observe.',
-        video_url: 'https://www.youtube.com/embed/nje1U7jJOHI' // Embedded format
+        video_url: 'https://player.vimeo.com/video/328684375?h=1eb2a8afb9' // Embedded format
     },
     {
         slug: 'harris-hall', // Keeping slug stable

@@ -45,7 +45,8 @@ export default function LocationDetail() {
                             src={location.video_url}
                             title={`${location.title} Video`}
                             frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen
                             style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
                         ></iframe>
