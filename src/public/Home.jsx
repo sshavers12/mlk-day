@@ -5,13 +5,33 @@ import { locations } from '../config/content';
 export default function Home() {
     return (
         <>
-            <header className="container" style={{ paddingTop: '4rem' }}>
-                <span className="subtitle">Chester Cultural Arts & Technology Center</span>
-                <h1>Reclaiming the <span style={{ color: 'var(--caat-yellow)' }}>Dream</span></h1>
-                <p style={{ marginTop: '1rem', borderLeft: '2px solid #333', paddingLeft: '1rem' }}>
-                    Dr. Martin Luther King Jr. • Chester, Pennsylvania<br />
-                    A living civic curriculum and digital archive.
-                </p>
+            {/* NEW HERO SECTION */}
+            <header style={{ position: 'relative', width: '100%', marginBottom: '4rem' }}>
+                <div style={{ width: '100%', height: 'auto', maxHeight: '600px', overflow: 'hidden', position: 'relative' }}>
+                    <img
+                        src="assets/images/station_campus_poster_map_bw_1768202533396.png"
+                        alt="Aerial Campus Map of MLK Experience Locations"
+                        style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                    />
+                    <div style={{ position: 'absolute', bottom: 0, left: 0, width: '100%', background: 'linear-gradient(to top, #000 0%, transparent 100%)', height: '150px' }}></div>
+                </div>
+
+                <div className="container" style={{ position: 'relative', marginTop: '-80px', paddingBottom: '2rem', zIndex: 2, background: 'linear-gradient(180deg, rgba(0,0,0,0) 0%, #000 20%)' }}>
+                    <h1 style={{ fontSize: '2.5rem', lineHeight: '1.2', marginBottom: '1rem' }}>
+                        MLK Day of Service & Reflection — <span style={{ color: 'var(--caat-yellow)' }}>The Chester Experience</span>
+                    </h1>
+                    <h2 className="subtitle" style={{ fontSize: '1.2rem', color: '#ccc', marginBottom: '1.5rem', fontWeight: '400', maxWidth: '800px', textTransform: 'none', letterSpacing: 'normal' }}>
+                        A Community Partnership Between Widener University and the Chester Cultural Arts & Technology Center (CAAT)
+                    </h2>
+                    <p style={{ fontSize: '1.1rem', color: '#888', maxWidth: '700px', marginBottom: '2rem' }}>
+                        A self-guided, campus-wide experience grounded in verified history, reflection, and community contribution.
+                    </p>
+
+                    <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+                        <a href="#overview" className="btn">Explore the Experience</a>
+                        <a href="#journey-map" className="btn" style={{ background: 'transparent', border: '1px solid #666', color: '#ccc' }}>View Exhibit Locations</a>
+                    </div>
+                </div>
             </header>
 
             <div className="container">
